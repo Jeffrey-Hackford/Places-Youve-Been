@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Places You've Been</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Places You've Been</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Where have you been?</h2>
+          <form id="newInput">
+            <div class="form-group">
+              <label for="newPlace">Where</label>
+              <input type="text" id="place">
+            </div>
+            <div class="form-group">
+              <label for="newWhen">When</label>
+              <input type="text" id="when">
+            </div>
+            <div class="form-group">
+              <label for="newWho">Who</label>
+              <input type="text" id="who">
+            </div>
+            <button type="submit" class="btn">Add</button>
+          </form>
+          <h3>Where you have been:</h3>
+          <ul id="listOfPlaces">
+
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div id="show-destination">
+            <h4>Where you've been</h4>
+
+            <p><span class="destination"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

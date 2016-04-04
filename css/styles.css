@@ -1,0 +1,12 @@
+.show-destination {
+  display: none;
+}
+
+.list {
+  cursor: pointer;
+  color: blue;
+}
+
+.list:hover {
+  text-decoration: underline;
+}
