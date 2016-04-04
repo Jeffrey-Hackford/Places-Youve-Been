@@ -2,10 +2,10 @@ function Everything(place, when, who) {
   this.place = place;
   this.when = when;
   this.who = who;
-}
 
- Everything.prototype.destinationInfo = function() {
-   return "You went to " + this.place + " with " + this.who + " on " + this.when;
+   Everything.prototype.destinationInfo = function() {
+     return "You went to " + place + " with " + who + " on " + when;
+  }
  }
 
 $(document).ready(function() {
@@ -18,11 +18,11 @@ $(document).ready(function() {
 
     var newEverything = new Everything(inputtedPlace, inputtedWhen, inputtedWho);
 
-    $("ul#listOfPlaces").append("<li><span class='list'>" + newEverything.destinationInfo() + "</span></li>")
+    $("ul#listOfPlaces").append("<li><span class='list'>" + inputtedPlace + "</span></li>")
 
-    $("input#place").val("");
-    $("input#when").val("");
-    $("input#who").val("");
-
+    $(".list").last().click(function(){
+      $(".show-destination").show();
+      $(".destination").text(newEverything.destinationInfo);
+    });
   });
 });
